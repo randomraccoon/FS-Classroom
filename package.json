@@ -1,0 +1,23 @@
+{
+  "name": "fs-classroom",
+  "version": "1.0.0",
+  "description": "As a teacher, I need to have a way to keep track of my students scores over time. Help me super-students!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randomraccoon/FS-Classroom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randomraccoon/FS-Classroom/issues"
+  },
+  "homepage": "https://github.com/randomraccoon/FS-Classroom#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.1"
+  }
+}

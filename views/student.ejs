@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h2><%= student.name %></h2>
+<h4>Grade: <%= student.grade %></h4>
+<% for (let score of student.scores) { %>
+  <p><%= score %></p>
+<% } %>
+<form action="/classrooms/<%= classId %>/students/<%= student.id %>/scores" method="post">
+  <input type="number" name="newScore" placeholder="100">
+  <input type="submit" >
+</form>
+<script type="text/javascript" src='/student.js'></script>
+<% include partials/footer %>

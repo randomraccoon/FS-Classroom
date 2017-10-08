@@ -1,0 +1,7 @@
+<% include partials/header %>
+
+<% for (let room of classrooms) { %>
+<br><a href="classrooms/<%= room.id %>"><%= room.subject %> - (<%= room.classSize %>)</a>
+<% } %>
+
+<% include partials/footer %>

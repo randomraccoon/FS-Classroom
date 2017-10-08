@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<h2><%= room.subject %></h2>
+<form class="sort-menu" action="javascript:;">
+  <label for="sort-category">Sort by:</label>
+  <select class="sort-category" name="sort-category">
+    <option value="" selected disabled hidden>...</option>
+    <option value="grade">Grade</option>
+    <option value="name">Name</option>
+  </select>
+</form>
+<div class="student-list">
+  <% for (let student of room.students) { %>
+    <a href="/classrooms/<%= room.id %>/students/<%= student.id %>"><%= student.name %> - <%= student.grade %></a>
+  <% } %>
+</div>
+<script type='text/javascript'>
+  const room = <%- JSON.stringify(room) %>;
+</script>
+<script type="text/javascript" src='/classroom.js'></script>
+
+<% include partials/footer %>
